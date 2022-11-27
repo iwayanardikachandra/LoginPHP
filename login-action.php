@@ -30,21 +30,21 @@ if (isset($_POST['login'])) { //user
         echo "<body>
         <script>
             alert('Password Invalid!')
-            window.location.replace('login.php')
+            window.location.replace('index.php')
         </script>
     </body>";
     } else if(in_array($getPassword, $data_decode)){
         echo "<body>
         <script>
             alert('Email Invalid!')
-            window.location.replace('login.php')
+            window.location.replace('index.php')
         </script>
     </body>";
     } else {
         echo "<body>
             <script>
                 alert('Invalid!')
-                window.location.replace('login.php')
+                window.location.replace('index.php')
             </script>
         </body>";
     }

@@ -4,7 +4,7 @@
     echo "<body>
         <script>
             alert('Logout Success!!!')
-            window.location.replace('login.php')
+            window.location.replace('index.php')
         </script>
     </body>";
 

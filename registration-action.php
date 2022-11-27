@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
         echo "<body>
         <script>
         alert('Success')
-        window.location.replace('login.php')
+        window.location.replace('index.php')
         </script>
         </body>";
     } else {

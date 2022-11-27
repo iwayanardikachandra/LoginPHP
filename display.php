@@ -2,7 +2,7 @@
 session_start();
 $wayan_decode_json = json_decode($_COOKIE['user'], true);
 if (!isset($_SESSION['email'])) {
-    header("Location: login.php");
+    header("Location: index.php");
 }
 ?>
 <!doctype html>
