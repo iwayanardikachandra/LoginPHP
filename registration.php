@@ -21,7 +21,7 @@
             <div class="col-md-3 register-left">
                 <img src="./assets/images/logo.png" alt="Logo" />
                 <h3>Welcome</h3>
-                <p>If You Have An Account, Please <a href="login.php">Sign In </a></p>
+                <p>If You Have An Account, Please <a href="index.php">Sign In </a></p>
                 <form method="post" action="login-back-action.php">
                 <!-- <a href=""><input type="submit" name="submit" value="Sign In" /></a><br /> -->
                 </form>
