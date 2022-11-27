@@ -1,3 +1,11 @@
+<!-- <?php
+// session_start();
+// if (!isset($_SESSION['email'])) {
+//     header("Location: login.php");
+// } else {
+//   header("Location: login.php");
+// } 
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +22,7 @@
 </head>
 
 <body>
+  <form method="post" action="login-action.php">
   <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
     <div class="container">
       <div class="card login-card">
@@ -28,7 +37,7 @@
               </div>
               <p class="login-card-description">Welcome</p>
               <p class="login-card-footer-text">If You Have An Account, Please Sign In</p>
-              <form method="post" action="login-action.php">
+              <form>
                 <div class="form-group">
                   <label for="email" class="sr-only">Email</label>
                   <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
@@ -37,7 +46,7 @@
                   <label for="password" class="sr-only">Password</label>
                   <input type="password" name="password" id="password" class="form-control" placeholder="Password">
                 </div>
-                <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Sign In">
+                <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Sign In">
               </form>
               <p class="login-card-footer-text">Don't Have An Account? <a href="registration.php"
                   class="text-reset">Create Account</a></p>
@@ -51,6 +60,7 @@
       </div>
     </div>
   </main>
+  </form>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
